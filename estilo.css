@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{display:-webkit-box;display:-ms-flexbox;display:flex; font: 13px Arial, Helvetica, sans-serif;}
+
+#container{
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin: 30px auto 0 auto;
+    /*CENTRALIZAÇÃO DO TABULEIRO*/
+}
+#tabuleiro{
+	width:400px;
+	height:400px;
+    /*TAMANHO DO TABULEIRO*/
+}
+
+.linha{	
+	height:50px;
+    /*ALTURA DO BLOCO*/
+}
+
+.casa{
+    /*LARGURA DO BLOCO*/
+	width:50px;
+	height:100%;	
+	float:left;
+}
+
+.casa_branca{
+    /*COR DAS CASAS NEUTRAS*/
+	background-color: #97d3ff;
+}
+
+.casa_preta{
+    /*COR DAS CASAS JOGAVEIS*/
+	background-color: #07a0ff;
+}
+
+.casa_selecionada{
+    /*COR DA CASA SELECIONADA AO SER CLICADA*/
+	background-color: yellow;
+}
+.peca {
+    cursor: pointer;
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	margin: 7px auto;
+    /*ALTURA, LARGURA, EFEITO PARA DEIXAR CIRCULAR E POSICIONAMENTO CENTRALIZADO DA PEÇA DENTRO DO BLOCO*/
+}
+.black{
+    background: black;
+    border: 2px solid #a83939;
+    /*COR DA PEÇA PRETA, TAMANHO E COR DA BORDA*/
+}
+.white{
+    background: #FFF;
+    border: 2px solid #000;
+    /*COR DA PEÇA BRANCA, TAMANHO E COR DA BORDA*/
+}
+
+.king-branco{
+    background-image: url(imgs/dama.fw.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*IMAGEM DA COROA DENTRO DA PEÇA AO VIRAR DAMA, COMANDO PARA NAO APARECER MAIS DE UMA IMAGEM DA COROA, E POSICIONAMENTO CENTRALIZADO*/
+}
+.king-preto{
+    background-image: url(imgs/dama.fw.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*IMAGEM DA COROA DENTRO DA PEÇA AO VIRAR DAMA, COMANDO PARA NAO APARECER MAIS DE UMA IMAGEM DA COROA, E POSICIONAMENTO CENTRALIZADO*/
+}
+.para{
+    background-image: url(imgs/bloqueado.fw.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*IMAGEM DE UM X NA PEÇA BLOQUEADA, COMANDO PARA NAO REPETIR A IMAGEM, E CENTRALIZAÇÃO DA IMAGEM*/
+}
+
+
+
+
+
+
+
+
+/** TABELA QUE MOSTRA OS DETALHES DA PARTIDA **/
+
+.jogadores{
+    background: #0e2d34;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: #fff;
+}
+.jogadores > table{
+    width: 300px;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+}
+.jg{
+    color: white;
+}
+.f{
+    border-right: 5px solid #000;
+}
+#pretos > span{
+    color: #aaaaff;
+}
+#brancos > span{
+    color: #aaaaff;
+}
+#tempo-partida{
+    font-size: 40px;
+    text-align: center;
+}
+#vez-jogador{
+    text-align: center;
+}
+#vencedor{
+    color: red; font-size: 30px; width: 400px; text-align: center;
+}
